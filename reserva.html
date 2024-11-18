@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reserva</title>
+</head>
+<body style="background-color: lightblue;">
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php" method="get">
+        <fieldset><legend>Datos personales</legend>
+
+    <p>
+        <label for="Nombre">Nombre:</label>
+        <input id="Nombre" type="text" maxlength="100"
+         name="nombre" required
+         autofocus> 
+    </p>
+    <p>
+        <label for="Apellidos">Apellidos</label>
+    <input id="Apellidos" type="text" maxlength="100" name="Apellidos" required>
+    </p>
+   <p>
+   <label for="DNI"> DNI </label>
+   <input id="DNI" type="text" maxlength="10" name="DNI"
+     placeholder="DNI con letra">
+   </p>
+    </fieldset>
+    <fieldset><legend>Datos de su estancia</legend>
+   <p>
+    Tipo de habitación: 
+    <input type="radio" name="Habitación" value="Individual"> Individual
+    <input type="radio" name="Habitación" value="doble"> Doble
+    <input type="radio" name="Habitación" value="triple"> Triple
+
+   </p>
+   <p>
+    Número de personas: <select name="numero de personas">
+    <option value="1" selected>1</option>
+    <option value="2" selected>2</option>
+    <option value="3" selected>3</option>
+
+    </select>
+   </p>
+   <p>
+    Llevo mascota: <input type="checkbox" name="mascota">
+   </p>
+
+   <p>
+    Fecha de llegada: 
+   <input type="date" name="Fecha">
+    </p>
+    <p>
+    Hora de llegada: <input type="time" name="hora">
+    </p>
+</fieldset>
+<input type="submit" value="Enviar">
+<input type="reset" value="Reiniciar">
+<p>
+<a href="index.html">Volver</a>
+</p>
+</form>
+</body>
+</html>
